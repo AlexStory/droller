@@ -1,7 +1,7 @@
 export default class DiceRoller {
-    roll(sides, num) {
+    roll(sides, num, all = false) {
         if(isNaN(sides) || isNaN(num)){
-            throw 'invalid argument, expects numbers';
+            throw new Error('invalid argument, expects numbers');
         }
 
         let tempSum = 0;
@@ -26,6 +26,6 @@ class Dice {
             return Math.ceil(Math.random() * this.sides);
         }
 
-        return Math.ceil(Math.random() * this.sides) + roll(num - 1);
+        return Math.ceil(Math.random() * this.sides) + this.roll(num - 1);
     }
 }

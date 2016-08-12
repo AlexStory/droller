@@ -7,6 +7,7 @@
     "test": "ava",
     "nyan": "ava --tap | tnyan",
     "test-verbose": "ava -v",
+    "coverage": "nyc ava && nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint src/*.js"
   },
   "repository": {
@@ -27,16 +28,22 @@
   "devDependencies": {
     "ava": "^0.16.0",
     "babel-register": "^6.11.6",
+    "coveralls": "^2.11.12",
+    "nyc": "^7.1.0",
     "tap-nyan": "0.0.2"
   },
-    "ava": {
-        "files" : [
-            "**/*.test.js",
-            "**/test.js"
-        ],
-        "require": ["babel-register"]
-    },
-    "babel": {
-        "presets" : ["es2015"]
-    }
+  "ava": {
+    "files": [
+      "**/*.test.js",
+      "**/test.js"
+    ],
+    "require": [
+      "babel-register"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  }
 }
