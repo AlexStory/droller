@@ -4,7 +4,10 @@
   "description": "dice roller for node",
   "main": "index.js",
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "nyan": "ava --tap | tnyan",
+    "test-verbose": "ava -v",
+    "lint": "eslint src/*.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +23,20 @@
   "bugs": {
     "url": "https://github.com/AlexStory/droller/issues"
   },
-  "homepage": "https://github.com/AlexStory/droller#readme"
+  "homepage": "https://github.com/AlexStory/droller#readme",
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "babel-register": "^6.11.6",
+    "tap-nyan": "0.0.2"
+  },
+    "ava": {
+        "files" : [
+            "**/*.test.js",
+            "**/test.js"
+        ],
+        "require": ["babel-register"]
+    },
+    "babel": {
+        "presets" : ["es2015"]
+    }
 }
