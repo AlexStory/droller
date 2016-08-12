@@ -4,10 +4,10 @@
   "description": "dice roller for node",
   "main": "index.js",
   "scripts": {
-    "test": "ava",
+    /*"test": "ava",*/
     "nyan": "ava --tap | tnyan",
     "test-verbose": "ava -v",
-    "coverage": "nyc ava && nyc report --reporter=text-lcov | coveralls",
+    "test": "nyc ava",
     "lint": "eslint src/*.js"
   },
   "repository": {
