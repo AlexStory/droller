@@ -6,8 +6,9 @@
   "scripts": {
     "nyan": "ava --tap | tnyan",
     "test-verbose": "ava -v",
-    "test": "nyc ava",
-    "lint": "eslint src/*.js"
+    "test": "nyc ava && nyc report --reporter=lcov > coverage.lcov && codecov",
+    "lint": "eslint src/*.js",
+    "coverage": "nyc report --reporter=lcov > coverage.lcov && codecov"
   },
   "repository": {
     "type": "git",
