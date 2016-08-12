@@ -4,7 +4,6 @@
   "description": "dice roller for node",
   "main": "index.js",
   "scripts": {
-    /*"test": "ava",*/
     "nyan": "ava --tap | tnyan",
     "test-verbose": "ava -v",
     "test": "nyc ava",
