@@ -1,0 +1,24 @@
+{
+  "name": "droller",
+  "version": "0.0.1",
+  "description": "dice roller for node",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexStory/droller.git"
+  },
+  "keywords": [
+    "dice",
+    "roller",
+    "random"
+  ],
+  "author": "astory11@yahoo.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlexStory/droller/issues"
+  },
+  "homepage": "https://github.com/AlexStory/droller#readme"
+}
