@@ -28,6 +28,7 @@
   "devDependencies": {
     "ava": "^0.16.0",
     "babel-register": "^6.11.6",
+    "codecov": "^1.0.1",
     "coveralls": "^2.11.12",
     "nyc": "^7.1.0",
     "tap-nyan": "0.0.2"
